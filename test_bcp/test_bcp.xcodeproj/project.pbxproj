@@ -20,6 +20,11 @@
 		88D53E6E28446FFC00352183 /* test_bcpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53E6D28446FFC00352183 /* test_bcpUITests.swift */; };
 		88D53E7028446FFC00352183 /* test_bcpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53E6F28446FFC00352183 /* test_bcpUITestsLaunchTests.swift */; };
 		88D53E912844ECAC00352183 /* CoreDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53E902844ECAC00352183 /* CoreDataUtil.swift */; };
+		88D53E962845065900352183 /* ListMoneys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D53E952845065900352183 /* ListMoneys.storyboard */; };
+		88D53E9A28450D3200352183 /* MoneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53E9828450D3200352183 /* MoneyTableViewCell.swift */; };
+		88D53E9B28450D3200352183 /* MoneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D53E9928450D3200352183 /* MoneyTableViewCell.xib */; };
+		88D53EA32845360B00352183 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EA22845360B00352183 /* CustomTextField.swift */; };
+		88D53EA6284545D300352183 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EA5284545D300352183 /* UIView+extension.swift */; };
 		F159B44C5A1AD431F34A5210 /* Pods_test_bcp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3845E5A65FD12981AE2C2A5B /* Pods_test_bcp.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +75,11 @@
 		88D53E7E2844766500352183 /* qa.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = qa.xcconfig; sourceTree = "<group>"; };
 		88D53E7F2844767300352183 /* prd.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = prd.xcconfig; sourceTree = "<group>"; };
 		88D53E902844ECAC00352183 /* CoreDataUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataUtil.swift; sourceTree = "<group>"; };
+		88D53E952845065900352183 /* ListMoneys.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListMoneys.storyboard; sourceTree = "<group>"; };
+		88D53E9828450D3200352183 /* MoneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTableViewCell.swift; sourceTree = "<group>"; };
+		88D53E9928450D3200352183 /* MoneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoneyTableViewCell.xib; sourceTree = "<group>"; };
+		88D53EA22845360B00352183 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		88D53EA5284545D300352183 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		92B9498B2E2EF8CDF23F1C86 /* Pods-test_bcp-test_bcpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcp-test_bcpUITests.release.xcconfig"; path = "Target Support Files/Pods-test_bcp-test_bcpUITests/Pods-test_bcp-test_bcpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9571AB2DB7A6C46CE1292EDE /* Pods-test_bcp-test_bcpUITests.debugdev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcp-test_bcpUITests.debugdev.xcconfig"; path = "Target Support Files/Pods-test_bcp-test_bcpUITests/Pods-test_bcp-test_bcpUITests.debugdev.xcconfig"; sourceTree = "<group>"; };
 		9BC3D283D4592EBFA840C292 /* Pods-test_bcpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcpTests.debug.xcconfig"; path = "Target Support Files/Pods-test_bcpTests/Pods-test_bcpTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +197,7 @@
 		88D53E8C284479CB00352183 /* Mods */ = {
 			isa = PBXGroup;
 			children = (
+				88D53E9C2845355300352183 /* Contry */,
 				88D53E922844FD3600352183 /* List */,
 			);
 			path = Mods;
@@ -203,6 +214,8 @@
 		88D53E8E2844EC0900352183 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				88D53EA4284545B700352183 /* Extention */,
+				88D53EA1284535F100352183 /* Components */,
 				88D53E8F2844EC1100352183 /* GlobalFunc */,
 			);
 			path = Helpers;
@@ -228,6 +241,8 @@
 		88D53E932844FE7A00352183 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				88D53E9728450B1700352183 /* Reusable */,
+				88D53E952845065900352183 /* ListMoneys.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,6 +252,54 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		88D53E9728450B1700352183 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				88D53E9828450D3200352183 /* MoneyTableViewCell.swift */,
+				88D53E9928450D3200352183 /* MoneyTableViewCell.xib */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		88D53E9C2845355300352183 /* Contry */ = {
+			isa = PBXGroup;
+			children = (
+				88D53E9E284535B400352183 /* View */,
+				88D53E9D284535A500352183 /* ViewModel */,
+			);
+			path = Contry;
+			sourceTree = "<group>";
+		};
+		88D53E9D284535A500352183 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		88D53E9E284535B400352183 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88D53EA1284535F100352183 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				88D53EA22845360B00352183 /* CustomTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		88D53EA4284545B700352183 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				88D53EA5284545D300352183 /* UIView+extension.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 		DF0D7FD65F4F17E5BF73C003 /* Pods */ = {
@@ -371,6 +434,8 @@
 				88D53E5928446FFC00352183 /* LaunchScreen.storyboard in Resources */,
 				88D53E5628446FFC00352183 /* Assets.xcassets in Resources */,
 				88D53E5128446FFA00352183 /* Main.storyboard in Resources */,
+				88D53E962845065900352183 /* ListMoneys.storyboard in Resources */,
+				88D53E9B28450D3200352183 /* MoneyTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +532,10 @@
 				88D53E4E28446FFA00352183 /* ViewController.swift in Sources */,
 				88D53E5428446FFA00352183 /* test_bcp.xcdatamodeld in Sources */,
 				88D53E4A28446FFA00352183 /* AppDelegate.swift in Sources */,
+				88D53EA6284545D300352183 /* UIView+extension.swift in Sources */,
+				88D53EA32845360B00352183 /* CustomTextField.swift in Sources */,
 				88D53E912844ECAC00352183 /* CoreDataUtil.swift in Sources */,
+				88D53E9A28450D3200352183 /* MoneyTableViewCell.swift in Sources */,
 				88D53E4C28446FFA00352183 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
