@@ -15,6 +15,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Create a new UserEntity in the
+        // NSManagedObjectContext context
+        
+
+        // Assign values to the entity's properties
+        
+        if let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate{
+            
+            // 1
+            let managedContext =
+              appDelegate.persistentContainer.viewContext
+            
+            CoreDataUtil.shared.managedContext = managedContext
+          
+        }
+          
+          
+        
         return true
     }
 
