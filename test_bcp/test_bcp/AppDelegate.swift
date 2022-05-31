@@ -33,7 +33,80 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           
         }
           
-          
+        if let isDataInitial = UserDefaults.standard.bool(forKey: "KISaveDataInitial") as? Bool  {
+            if !isDataInitial {
+                guard let context = CoreDataUtil.shared.managedContext else {return true}
+                let money1 = Money(context: context)
+                money1.id = 1
+                money1.name = "Pesos"
+                money1.buy_value = 0.00024
+                money1.sel_value = 0.00026
+                
+                let money2 = Money(context: context)
+                money2.id = 2
+                money2.name = "Sol"
+                money2.buy_value = 0.25
+                money2.sel_value = 0.27
+                
+                let money3 = Money(context: context)
+                money3.id = 3
+                money3.name = "Dolar"
+                money3.buy_value = 1
+                money3.sel_value = 1.01
+                
+                let money4 = Money(context: context)
+                money4.id = 4
+                money4.name = "Euro"
+                money4.buy_value = 1.07
+                money4.sel_value = 1.08
+
+                let contry1 = Contry(context: context)
+                contry1.name = "Colomia"
+                contry1.id = 1
+                contry1.money = 1
+                contry1.url_flag = "https://cdn.pixabay.com/photo/2012/04/15/21/27/colombia-35364__480.png"
+                
+                let contry2 = Contry(context: context)
+                contry2.name = "Peru"
+                contry2.id = 2
+                contry2.money = 2
+                contry2.url_flag = "https://upload.wikimedia.org/wikipedia/commons/5/5f/Bandera_de_peru.png"
+                
+                let contry3 = Contry(context: context)
+                contry3.name = "Estados Unidos"
+                contry3.id = 3
+                contry3.money = 3
+                contry3.url_flag = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.svg.png"
+                
+                let contry4 = Contry(context: context)
+                contry4.name = "España"
+                contry4.id = 4
+                contry4.money = 4
+                contry4.url_flag = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Bandera_de_Espa%C3%B1a_1978.png/1024px-Bandera_de_Espa%C3%B1a_1978.png"
+                
+                let contry5 = Contry(context: context)
+                contry5.name = "Ecuador"
+                contry5.id = 5
+                contry5.money = 3
+                contry5.url_flag = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/1024px-Flag_of_Ecuador.svg.png"
+                
+                let contry6 = Contry(context: context)
+                contry6.name = "Francia"
+                contry6.id = 6
+                contry6.money = 4
+                contry6.url_flag = "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+                
+                do {
+                    try context.save()
+                    UserDefaults.standard.set(true, forKey: "KISaveDataInitial")
+                }
+                catch {
+                    // Handle Error
+                }
+                
+            }
+        }
+        
         
         return true
     }

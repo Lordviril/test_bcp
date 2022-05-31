@@ -10,21 +10,20 @@ import UIKit
 // MARK: - @IBInspectable variables
 @IBDesignable class CustomButton: UIButton {
 
-    @IBInspectable var isEnabledAparence: Bool {
-        get {
-            return self.isEnabledAparence
-        }
-        set {
+    @IBInspectable var isEnabledAparence: Bool = false{
+        didSet{
             self.isEnabled = isEnabledAparence
             if isEnabledAparence {
                 self.backgroundColor = UIColor.blue
-                self.setTitleColor(UIColor.white, for: .normal)
+                self.titleLabel?.textColor = UIColor.white
+                //self.setTitleColor(UIColor.white, for: .normal)
                 
             } else {
                 self.backgroundColor = UIColor.gray
+                self.titleLabel?.textColor = UIColor.black
+                //
                 self.setTitleColor(UIColor.black, for: .normal)
             }
-            
         }
     }
     
@@ -72,29 +71,3 @@ import UIKit
     
     private var enabledBackgroundColor: UIColor?
 }
-
-// MARK: - Setup
-extension CustomButton {
-    
-    override var backgroundColor: UIColor? {
-        didSet {
-            if enabledBackgroundColor == nil { enabledBackgroundColor = self.backgroundColor }
-        }
-    }
-    
-    override var isEnabled: Bool {
-        didSet {
-            guard let disabledBackgroundColor = self.disabledBackground else { return }
-            if self.isEnabled {
-                self.backgroundColor = enabledBackgroundColor
-            } else {
-                self.backgroundColor = disabledBackgroundColor
-            }
-        }
-    }
-
-    override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
-    }
-}
-

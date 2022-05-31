@@ -30,6 +30,7 @@
 		88D53EAC2845522D00352183 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EAB2845522D00352183 /* CustomView.swift */; };
 		88D53EAE2845525F00352183 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EAD2845525F00352183 /* CustomButton.swift */; };
 		88D53EB22845A79400352183 /* ValidateFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EB12845A79400352183 /* ValidateFormView.swift */; };
+		95A73960284654270000C04F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7395F284654270000C04F /* SecondViewController.swift */; };
 		F159B44C5A1AD431F34A5210 /* Pods_test_bcp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3845E5A65FD12981AE2C2A5B /* Pods_test_bcp.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		88D53EB12845A79400352183 /* ValidateFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateFormView.swift; sourceTree = "<group>"; };
 		92B9498B2E2EF8CDF23F1C86 /* Pods-test_bcp-test_bcpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcp-test_bcpUITests.release.xcconfig"; path = "Target Support Files/Pods-test_bcp-test_bcpUITests/Pods-test_bcp-test_bcpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9571AB2DB7A6C46CE1292EDE /* Pods-test_bcp-test_bcpUITests.debugdev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcp-test_bcpUITests.debugdev.xcconfig"; path = "Target Support Files/Pods-test_bcp-test_bcpUITests/Pods-test_bcp-test_bcpUITests.debugdev.xcconfig"; sourceTree = "<group>"; };
+		95A7395F284654270000C04F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9BC3D283D4592EBFA840C292 /* Pods-test_bcpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcpTests.debug.xcconfig"; path = "Target Support Files/Pods-test_bcpTests/Pods-test_bcpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA3FA89C6B1932AF6A779D7A /* Pods-test_bcp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcp.debug.xcconfig"; path = "Target Support Files/Pods-test_bcp/Pods-test_bcp.debug.xcconfig"; sourceTree = "<group>"; };
 		DF29794A82270D2516B375B0 /* Pods-test_bcp-test_bcpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcp-test_bcpUITests.debug.xcconfig"; path = "Target Support Files/Pods-test_bcp-test_bcpUITests/Pods-test_bcp-test_bcpUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,7 +170,6 @@
 				88D53E7C2844701100352183 /* Config */,
 				88D53E4928446FFA00352183 /* AppDelegate.swift */,
 				88D53E4B28446FFA00352183 /* SceneDelegate.swift */,
-				88D53E4D28446FFA00352183 /* ViewController.swift */,
 				88D53E4F28446FFA00352183 /* Main.storyboard */,
 				88D53E5528446FFC00352183 /* Assets.xcassets */,
 				88D53E5728446FFC00352183 /* LaunchScreen.storyboard */,
@@ -252,7 +253,9 @@
 			isa = PBXGroup;
 			children = (
 				88D53E9728450B1700352183 /* Reusable */,
+				88D53E4D28446FFA00352183 /* ViewController.swift */,
 				88D53E952845065900352183 /* ListMoneys.storyboard */,
+				95A7395F284654270000C04F /* SecondViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 				88D53E4A28446FFA00352183 /* AppDelegate.swift in Sources */,
 				88D53EA6284545D300352183 /* UIView+extension.swift in Sources */,
 				88D53EAC2845522D00352183 /* CustomView.swift in Sources */,
+				95A73960284654270000C04F /* SecondViewController.swift in Sources */,
 				88D53EA32845360B00352183 /* CustomTextField.swift in Sources */,
 				88D53EAE2845525F00352183 /* CustomButton.swift in Sources */,
 				88D53E912844ECAC00352183 /* CoreDataUtil.swift in Sources */,
