@@ -73,7 +73,7 @@ class CustomTextField: UITextField {
     }
     
     func addTitleInTextField() {
-        var labelTitle = UILabel(frame: CGRect(x: self.frame.origin.x, y: self.frame.origin.y - 30, width: self.frame.width, height: 25))
+        let labelTitle = UILabel(frame: CGRect(x: self.frame.origin.x, y: self.frame.origin.y - 30, width: self.frame.width, height: 25))
         labelTitle.text = self.placeholder
         
         self.parentView?.addSubview(labelTitle)

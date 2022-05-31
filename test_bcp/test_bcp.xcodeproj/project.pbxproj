@@ -25,6 +25,11 @@
 		88D53E9B28450D3200352183 /* MoneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D53E9928450D3200352183 /* MoneyTableViewCell.xib */; };
 		88D53EA32845360B00352183 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EA22845360B00352183 /* CustomTextField.swift */; };
 		88D53EA6284545D300352183 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EA5284545D300352183 /* UIView+extension.swift */; };
+		88D53EA92845511400352183 /* ContryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EA72845511400352183 /* ContryViewController.swift */; };
+		88D53EAA2845511400352183 /* ContryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D53EA82845511400352183 /* ContryViewController.xib */; };
+		88D53EAC2845522D00352183 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EAB2845522D00352183 /* CustomView.swift */; };
+		88D53EAE2845525F00352183 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EAD2845525F00352183 /* CustomButton.swift */; };
+		88D53EB22845A79400352183 /* ValidateFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EB12845A79400352183 /* ValidateFormView.swift */; };
 		F159B44C5A1AD431F34A5210 /* Pods_test_bcp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3845E5A65FD12981AE2C2A5B /* Pods_test_bcp.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +85,11 @@
 		88D53E9928450D3200352183 /* MoneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoneyTableViewCell.xib; sourceTree = "<group>"; };
 		88D53EA22845360B00352183 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		88D53EA5284545D300352183 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		88D53EA72845511400352183 /* ContryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContryViewController.swift; sourceTree = "<group>"; };
+		88D53EA82845511400352183 /* ContryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContryViewController.xib; sourceTree = "<group>"; };
+		88D53EAB2845522D00352183 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		88D53EAD2845525F00352183 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		88D53EB12845A79400352183 /* ValidateFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateFormView.swift; sourceTree = "<group>"; };
 		92B9498B2E2EF8CDF23F1C86 /* Pods-test_bcp-test_bcpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcp-test_bcpUITests.release.xcconfig"; path = "Target Support Files/Pods-test_bcp-test_bcpUITests/Pods-test_bcp-test_bcpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9571AB2DB7A6C46CE1292EDE /* Pods-test_bcp-test_bcpUITests.debugdev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcp-test_bcpUITests.debugdev.xcconfig"; path = "Target Support Files/Pods-test_bcp-test_bcpUITests/Pods-test_bcp-test_bcpUITests.debugdev.xcconfig"; sourceTree = "<group>"; };
 		9BC3D283D4592EBFA840C292 /* Pods-test_bcpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcpTests.debug.xcconfig"; path = "Target Support Files/Pods-test_bcpTests/Pods-test_bcpTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -282,6 +292,8 @@
 		88D53E9E284535B400352183 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				88D53EA72845511400352183 /* ContryViewController.swift */,
+				88D53EA82845511400352183 /* ContryViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,7 +301,10 @@
 		88D53EA1284535F100352183 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				88D53EB12845A79400352183 /* ValidateFormView.swift */,
 				88D53EA22845360B00352183 /* CustomTextField.swift */,
+				88D53EAB2845522D00352183 /* CustomView.swift */,
+				88D53EAD2845525F00352183 /* CustomButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -335,6 +350,7 @@
 				88D53E4228446FFA00352183 /* Sources */,
 				88D53E4328446FFA00352183 /* Frameworks */,
 				88D53E4428446FFA00352183 /* Resources */,
+				4C2237F21F5B0D445AFBA43E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -372,6 +388,7 @@
 				88D53E6528446FFC00352183 /* Sources */,
 				88D53E6628446FFC00352183 /* Frameworks */,
 				88D53E6728446FFC00352183 /* Resources */,
+				AF4084451EBDDFACBF5EF28A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -432,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88D53E5928446FFC00352183 /* LaunchScreen.storyboard in Resources */,
+				88D53EAA2845511400352183 /* ContryViewController.xib in Resources */,
 				88D53E5628446FFC00352183 /* Assets.xcassets in Resources */,
 				88D53E5128446FFA00352183 /* Main.storyboard in Resources */,
 				88D53E962845065900352183 /* ListMoneys.storyboard in Resources */,
@@ -456,6 +474,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4C2237F21F5B0D445AFBA43E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test_bcp/Pods-test_bcp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test_bcp/Pods-test_bcp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test_bcp/Pods-test_bcp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		649483CA7D0A5B69B84975B2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,6 +511,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF4084451EBDDFACBF5EF28A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test_bcp-test_bcpUITests/Pods-test_bcp-test_bcpUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test_bcp-test_bcpUITests/Pods-test_bcp-test_bcpUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test_bcp-test_bcpUITests/Pods-test_bcp-test_bcpUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6465554731DABAE97890AAF /* [CP] Check Pods Manifest.lock */ = {
@@ -529,13 +581,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D53EA92845511400352183 /* ContryViewController.swift in Sources */,
 				88D53E4E28446FFA00352183 /* ViewController.swift in Sources */,
 				88D53E5428446FFA00352183 /* test_bcp.xcdatamodeld in Sources */,
 				88D53E4A28446FFA00352183 /* AppDelegate.swift in Sources */,
 				88D53EA6284545D300352183 /* UIView+extension.swift in Sources */,
+				88D53EAC2845522D00352183 /* CustomView.swift in Sources */,
 				88D53EA32845360B00352183 /* CustomTextField.swift in Sources */,
+				88D53EAE2845525F00352183 /* CustomButton.swift in Sources */,
 				88D53E912844ECAC00352183 /* CoreDataUtil.swift in Sources */,
 				88D53E9A28450D3200352183 /* MoneyTableViewCell.swift in Sources */,
+				88D53EB22845A79400352183 /* ValidateFormView.swift in Sources */,
 				88D53E4C28446FFA00352183 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
