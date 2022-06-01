@@ -143,17 +143,11 @@ class ListContryViewModel {
 - configuramos nuestra consola de firebase
 - agregamos los correos a los que queremos liberar la version qa en develop segun ambiente
 
-![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyummy-26178.appspot.com/o/Captura%20de%20Pantalla%202021-10-26%20a%20la(s)%201.42.20%20a.%C2%A0m..png?alt=media&token=a937d623-04d9-4ee5-99d4-0dca17d4895c)
+![firebasestorage](https://firebasestorage.googleapis.com/v0/b/juegosdemesa-9a7d0.appspot.com/o/Captura%20de%20Pantalla%202022-06-01%20a%20la(s)%207.58.41%20a.m..png?alt=media&token=0c41713b-db8e-45f0-929b-6209411b3331)
 
 - y cada vez que hagamos un pull request a nuestra rama qa tendremos automáticamente un build con las características de workflow ya construidas
-
-![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyummy-26178.appspot.com/o/Captura%20de%20Pantalla%202021-10-26%20a%20la(s)%201.03.43%20a.%C2%A0m..png?alt=media&token=84fe9885-d648-459b-b3c4-3451557841d7)
-
-- incluso por medio de notificación tambien configurables te avisa si falla
-
-![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyummy-26178.appspot.com/o/Captura%20de%20Pantalla%202021-10-26%20a%20la(s)%2012.25.10%20a.%C2%A0m..png?alt=media&token=1da43293-e709-4537-9ee6-6a142d73a976)
 
 
 ## Video demostrativo
 
-[![IMAGE ALT TEXT HERE](https://firebasestorage.googleapis.com/v0/b/testyummy-26178.appspot.com/o/Captura%20de%20Pantalla%202021-10-26%20a%20la(s)%201.26.50%20a.%C2%A0m..png?alt=media&token=c1844733-42ba-4446-a443-a412b1055dd4)](https://www.youtube.com/watch?v=Aj8FFchdXBU&ab_channel=testcompiler)
+[![IMAGE ALT TEXT HERE](https://firebasestorage.googleapis.com/v0/b/juegosdemesa-9a7d0.appspot.com/o/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20-%202022-06-01%20at%2008.05.35.png?alt=media&token=c79e412f-291b-4b25-a34c-53fd9b5430a2)](https://firebasestorage.googleapis.com/v0/b/juegosdemesa-9a7d0.appspot.com/o/Simulator%20Screen%20Recording%20-%20iPhone%2011%20Pro%20-%202022-06-01%20at%2008.04.15.mp4?alt=media&token=a46405c3-d733-4e2a-ab63-9f50e9991cce)
