@@ -20,7 +20,6 @@
 		88D53E6E28446FFC00352183 /* test_bcpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53E6D28446FFC00352183 /* test_bcpUITests.swift */; };
 		88D53E7028446FFC00352183 /* test_bcpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53E6F28446FFC00352183 /* test_bcpUITestsLaunchTests.swift */; };
 		88D53E912844ECAC00352183 /* CoreDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53E902844ECAC00352183 /* CoreDataUtil.swift */; };
-		88D53E962845065900352183 /* ListMoneys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D53E952845065900352183 /* ListMoneys.storyboard */; };
 		88D53E9A28450D3200352183 /* MoneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53E9828450D3200352183 /* MoneyTableViewCell.swift */; };
 		88D53E9B28450D3200352183 /* MoneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D53E9928450D3200352183 /* MoneyTableViewCell.xib */; };
 		88D53EA32845360B00352183 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EA22845360B00352183 /* CustomTextField.swift */; };
@@ -30,7 +29,17 @@
 		88D53EAC2845522D00352183 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EAB2845522D00352183 /* CustomView.swift */; };
 		88D53EAE2845525F00352183 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EAD2845525F00352183 /* CustomButton.swift */; };
 		88D53EB22845A79400352183 /* ValidateFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D53EB12845A79400352183 /* ValidateFormView.swift */; };
-		95A73960284654270000C04F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7395F284654270000C04F /* SecondViewController.swift */; };
+		95A739622846A5110000C04F /* ListContryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A739612846A5110000C04F /* ListContryViewModel.swift */; };
+		95A739652846CCFB0000C04F /* ContryWithMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A739642846CCFB0000C04F /* ContryWithMoney.swift */; };
+		95A739682846D07B0000C04F /* ContryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A739672846D07B0000C04F /* ContryViewModel.swift */; };
+		95A7396F2846E24A0000C04F /* ItemTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95A7396D2846E24A0000C04F /* ItemTextTableViewCell.xib */; };
+		95A739702846E24A0000C04F /* ItemTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7396E2846E24A0000C04F /* ItemTextTableViewCell.swift */; };
+		95A739732846E2590000C04F /* ListItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95A739712846E2590000C04F /* ListItemsViewController.xib */; };
+		95A739742846E2590000C04F /* ListItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A739722846E2590000C04F /* ListItemsViewController.swift */; };
+		95A739762846E2640000C04F /* TextFieldFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A739752846E2640000C04F /* TextFieldFilter.swift */; };
+		95A7397D2846F4910000C04F /* CurrencyTransference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A7397C2846F4910000C04F /* CurrencyTransference.storyboard */; };
+		95A7397F2846F4B60000C04F /* CurrencyTransferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7397E2846F4B60000C04F /* CurrencyTransferenceViewController.swift */; };
+		95A7398128477D5C0000C04F /* CurrencyTransferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7398028477D5C0000C04F /* CurrencyTransferViewModel.swift */; };
 		F159B44C5A1AD431F34A5210 /* Pods_test_bcp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3845E5A65FD12981AE2C2A5B /* Pods_test_bcp.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +90,6 @@
 		88D53E7E2844766500352183 /* qa.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = qa.xcconfig; sourceTree = "<group>"; };
 		88D53E7F2844767300352183 /* prd.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = prd.xcconfig; sourceTree = "<group>"; };
 		88D53E902844ECAC00352183 /* CoreDataUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataUtil.swift; sourceTree = "<group>"; };
-		88D53E952845065900352183 /* ListMoneys.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListMoneys.storyboard; sourceTree = "<group>"; };
 		88D53E9828450D3200352183 /* MoneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTableViewCell.swift; sourceTree = "<group>"; };
 		88D53E9928450D3200352183 /* MoneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoneyTableViewCell.xib; sourceTree = "<group>"; };
 		88D53EA22845360B00352183 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -93,7 +101,17 @@
 		88D53EB12845A79400352183 /* ValidateFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateFormView.swift; sourceTree = "<group>"; };
 		92B9498B2E2EF8CDF23F1C86 /* Pods-test_bcp-test_bcpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcp-test_bcpUITests.release.xcconfig"; path = "Target Support Files/Pods-test_bcp-test_bcpUITests/Pods-test_bcp-test_bcpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9571AB2DB7A6C46CE1292EDE /* Pods-test_bcp-test_bcpUITests.debugdev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcp-test_bcpUITests.debugdev.xcconfig"; path = "Target Support Files/Pods-test_bcp-test_bcpUITests/Pods-test_bcp-test_bcpUITests.debugdev.xcconfig"; sourceTree = "<group>"; };
-		95A7395F284654270000C04F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		95A739612846A5110000C04F /* ListContryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListContryViewModel.swift; path = test_bcp/Mods/List/ViewModel/ListContryViewModel.swift; sourceTree = SOURCE_ROOT; };
+		95A739642846CCFB0000C04F /* ContryWithMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContryWithMoney.swift; sourceTree = "<group>"; };
+		95A739672846D07B0000C04F /* ContryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContryViewModel.swift; sourceTree = "<group>"; };
+		95A7396D2846E24A0000C04F /* ItemTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemTextTableViewCell.xib; sourceTree = "<group>"; };
+		95A7396E2846E24A0000C04F /* ItemTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTextTableViewCell.swift; sourceTree = "<group>"; };
+		95A739712846E2590000C04F /* ListItemsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListItemsViewController.xib; sourceTree = "<group>"; };
+		95A739722846E2590000C04F /* ListItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemsViewController.swift; sourceTree = "<group>"; };
+		95A739752846E2640000C04F /* TextFieldFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldFilter.swift; sourceTree = "<group>"; };
+		95A7397C2846F4910000C04F /* CurrencyTransference.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CurrencyTransference.storyboard; sourceTree = "<group>"; };
+		95A7397E2846F4B60000C04F /* CurrencyTransferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTransferenceViewController.swift; sourceTree = "<group>"; };
+		95A7398028477D5C0000C04F /* CurrencyTransferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTransferViewModel.swift; sourceTree = "<group>"; };
 		9BC3D283D4592EBFA840C292 /* Pods-test_bcpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcpTests.debug.xcconfig"; path = "Target Support Files/Pods-test_bcpTests/Pods-test_bcpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA3FA89C6B1932AF6A779D7A /* Pods-test_bcp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcp.debug.xcconfig"; path = "Target Support Files/Pods-test_bcp/Pods-test_bcp.debug.xcconfig"; sourceTree = "<group>"; };
 		DF29794A82270D2516B375B0 /* Pods-test_bcp-test_bcpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_bcp-test_bcpUITests.debug.xcconfig"; path = "Target Support Files/Pods-test_bcp-test_bcpUITests/Pods-test_bcp-test_bcpUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,7 +188,6 @@
 				88D53E7C2844701100352183 /* Config */,
 				88D53E4928446FFA00352183 /* AppDelegate.swift */,
 				88D53E4B28446FFA00352183 /* SceneDelegate.swift */,
-				88D53E4F28446FFA00352183 /* Main.storyboard */,
 				88D53E5528446FFC00352183 /* Assets.xcassets */,
 				88D53E5728446FFC00352183 /* LaunchScreen.storyboard */,
 				88D53E5A28446FFC00352183 /* Info.plist */,
@@ -208,6 +225,8 @@
 		88D53E8C284479CB00352183 /* Mods */ = {
 			isa = PBXGroup;
 			children = (
+				95A739772846F4380000C04F /* CurrencyTransference */,
+				95A739692846E1E10000C04F /* Reusable */,
 				88D53E9C2845355300352183 /* Contry */,
 				88D53E922844FD3600352183 /* List */,
 			);
@@ -218,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				88D53E5228446FFA00352183 /* test_bcp.xcdatamodeld */,
+				95A739642846CCFB0000C04F /* ContryWithMoney.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,7 +263,7 @@
 		88D53E922844FD3600352183 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				88D53E942844FE8200352183 /* ViewModel */,
+				95A739632846A5710000C04F /* ViewModel */,
 				88D53E932844FE7A00352183 /* View */,
 			);
 			path = List;
@@ -254,17 +274,9 @@
 			children = (
 				88D53E9728450B1700352183 /* Reusable */,
 				88D53E4D28446FFA00352183 /* ViewController.swift */,
-				88D53E952845065900352183 /* ListMoneys.storyboard */,
-				95A7395F284654270000C04F /* SecondViewController.swift */,
+				88D53E4F28446FFA00352183 /* Main.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		88D53E942844FE8200352183 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		88D53E9728450B1700352183 /* Reusable */ = {
@@ -279,17 +291,10 @@
 		88D53E9C2845355300352183 /* Contry */ = {
 			isa = PBXGroup;
 			children = (
+				95A739662846D0670000C04F /* ViewModel */,
 				88D53E9E284535B400352183 /* View */,
-				88D53E9D284535A500352183 /* ViewModel */,
 			);
 			path = Contry;
-			sourceTree = "<group>";
-		};
-		88D53E9D284535A500352183 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		88D53E9E284535B400352183 /* View */ = {
@@ -318,6 +323,84 @@
 				88D53EA5284545D300352183 /* UIView+extension.swift */,
 			);
 			path = Extention;
+			sourceTree = "<group>";
+		};
+		95A739632846A5710000C04F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				95A739612846A5110000C04F /* ListContryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		95A739662846D0670000C04F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				95A739672846D07B0000C04F /* ContryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		95A739692846E1E10000C04F /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				95A7396A2846E1F20000C04F /* TextAutocomplete */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		95A7396A2846E1F20000C04F /* TextAutocomplete */ = {
+			isa = PBXGroup;
+			children = (
+				95A739752846E2640000C04F /* TextFieldFilter.swift */,
+				95A7396B2846E1FE0000C04F /* ListItems */,
+			);
+			path = TextAutocomplete;
+			sourceTree = "<group>";
+		};
+		95A7396B2846E1FE0000C04F /* ListItems */ = {
+			isa = PBXGroup;
+			children = (
+				95A739722846E2590000C04F /* ListItemsViewController.swift */,
+				95A739712846E2590000C04F /* ListItemsViewController.xib */,
+				95A7396C2846E21D0000C04F /* cell */,
+			);
+			path = ListItems;
+			sourceTree = "<group>";
+		};
+		95A7396C2846E21D0000C04F /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				95A7396E2846E24A0000C04F /* ItemTextTableViewCell.swift */,
+				95A7396D2846E24A0000C04F /* ItemTextTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		95A739772846F4380000C04F /* CurrencyTransference */ = {
+			isa = PBXGroup;
+			children = (
+				95A739792846F4690000C04F /* ViewModel */,
+				95A739782846F4640000C04F /* View */,
+			);
+			path = CurrencyTransference;
+			sourceTree = "<group>";
+		};
+		95A739782846F4640000C04F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95A7397C2846F4910000C04F /* CurrencyTransference.storyboard */,
+				95A7397E2846F4B60000C04F /* CurrencyTransferenceViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		95A739792846F4690000C04F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				95A7398028477D5C0000C04F /* CurrencyTransferViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DF0D7FD65F4F17E5BF73C003 /* Pods */ = {
@@ -452,10 +535,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				88D53E5928446FFC00352183 /* LaunchScreen.storyboard in Resources */,
+				95A7397D2846F4910000C04F /* CurrencyTransference.storyboard in Resources */,
 				88D53EAA2845511400352183 /* ContryViewController.xib in Resources */,
 				88D53E5628446FFC00352183 /* Assets.xcassets in Resources */,
+				95A739732846E2590000C04F /* ListItemsViewController.xib in Resources */,
+				95A7396F2846E24A0000C04F /* ItemTextTableViewCell.xib in Resources */,
 				88D53E5128446FFA00352183 /* Main.storyboard in Resources */,
-				88D53E962845065900352183 /* ListMoneys.storyboard in Resources */,
 				88D53E9B28450D3200352183 /* MoneyTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,16 +670,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				88D53EA92845511400352183 /* ContryViewController.swift in Sources */,
+				95A739622846A5110000C04F /* ListContryViewModel.swift in Sources */,
 				88D53E4E28446FFA00352183 /* ViewController.swift in Sources */,
 				88D53E5428446FFA00352183 /* test_bcp.xcdatamodeld in Sources */,
 				88D53E4A28446FFA00352183 /* AppDelegate.swift in Sources */,
+				95A739742846E2590000C04F /* ListItemsViewController.swift in Sources */,
+				95A739652846CCFB0000C04F /* ContryWithMoney.swift in Sources */,
+				95A739682846D07B0000C04F /* ContryViewModel.swift in Sources */,
 				88D53EA6284545D300352183 /* UIView+extension.swift in Sources */,
 				88D53EAC2845522D00352183 /* CustomView.swift in Sources */,
-				95A73960284654270000C04F /* SecondViewController.swift in Sources */,
+				95A7398128477D5C0000C04F /* CurrencyTransferViewModel.swift in Sources */,
 				88D53EA32845360B00352183 /* CustomTextField.swift in Sources */,
 				88D53EAE2845525F00352183 /* CustomButton.swift in Sources */,
 				88D53E912844ECAC00352183 /* CoreDataUtil.swift in Sources */,
+				95A739762846E2640000C04F /* TextFieldFilter.swift in Sources */,
 				88D53E9A28450D3200352183 /* MoneyTableViewCell.swift in Sources */,
+				95A7397F2846F4B60000C04F /* CurrencyTransferenceViewController.swift in Sources */,
+				95A739702846E24A0000C04F /* ItemTextTableViewCell.swift in Sources */,
 				88D53EB22845A79400352183 /* ValidateFormView.swift in Sources */,
 				88D53E4C28446FFA00352183 /* SceneDelegate.swift in Sources */,
 			);

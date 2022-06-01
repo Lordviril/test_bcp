@@ -94,7 +94,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 contry6.name = "Francia"
                 contry6.id = 6
                 contry6.money = 4
-                contry6.url_flag = "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+                contry6.url_flag = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Flag_of_France.png/1024px-Flag_of_France.png"
                 
                 do {
                     try context.save()
