@@ -20,5 +20,13 @@ class CurrencyTransferViewModel {
         self.currencyTransferViewModelDelegate = currencyTransferViewModelDelegate
     }
     
-    func convert()
+    func convert(enterValue: Double, initMoney: Money, convertMoney: Money) {
+        let usdBuyValue = enterValue * initMoney.buy_value
+        let convertmoneyBuyVslue = usdBuyValue / convertMoney.buy_value
+        
+        let usdSelValue = enterValue * initMoney.sel_value
+        let convertmoneySelVslue = usdSelValue / convertMoney.sel_value
+        
+        self.currencyTransferViewModelDelegate?.onCompleteConvert(buyValue: convertmoneyBuyVslue, selValue: convertmoneySelVslue, totalValue: convertmoneySelVslue)
+    }
 }

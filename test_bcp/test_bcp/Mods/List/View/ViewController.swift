@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     
     var listContryViewModel: ListContryViewModel?
     var listContry = [ContryWithMoney]()
+    var selectMoney: ((Money) -> Void)?
+    var isPopOver = false
+    var sendMoney = Money()
     override func viewDidLoad() {
         super.viewDidLoad()
         setInitComponent()
@@ -34,10 +37,41 @@ class ViewController: UIViewController {
         }
     }
     
+    static func show(controller: UIViewController, selectMoney: @escaping ((Money) -> Void)) {
+        let storyBoard1 = UIStoryboard(name: "Main", bundle: nil)
+        if let viewController = storyBoard1.instantiateViewController(withIdentifier: "ViewController") as? ViewController {
+            viewController.selectMoney = selectMoney
+            viewController.isPopOver = true
+            viewController.modalPresentationStyle = .popover
+            
+            controller.present(viewController, animated: true)
+        }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let currencyTransferenceViewController = segue.destination as? CurrencyTransferenceViewController {
+            currencyTransferenceViewController.initMoneyInto = sendMoney
+        }
+    }
 }
 //MARK: -UITableViewDelegate
 extension ViewController: UITableViewDelegate {
    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if isPopOver {
+            self.dismiss(animated: true) {
+                if let money = self.listContry[indexPath.row].money{
+                    self.selectMoney?(money)
+                }
+            }
+        } else {
+            if let money = self.listContry[indexPath.row].money{
+                self.sendMoney = money
+                performSegue(withIdentifier: "showConvertMoney", sender: nil)
+            }
+        }
+    }
     
 }
 //MARK: -UITableViewDataSource

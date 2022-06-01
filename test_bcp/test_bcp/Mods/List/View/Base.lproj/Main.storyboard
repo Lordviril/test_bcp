@@ -27,7 +27,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test_bcp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="test_bcp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,11 +74,22 @@
                     </navigationItem>
                     <connections>
                         <outlet property="contryTableView" destination="tUq-sk-OPS" id="2bP-ue-y0Q"/>
+                        <segue destination="VMw-Of-Ygz" kind="show" identifier="showConvertMoney" id="Rd9-DC-idC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="35" y="67"/>
+        </scene>
+        <!--CurrencyTransference-->
+        <scene sceneID="1nw-5j-pio">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CurrencyTransference" id="VMw-Of-Ygz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pCh-mF-e8u"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPK-E4-bnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="-242"/>
         </scene>
     </scenes>
     <resources>

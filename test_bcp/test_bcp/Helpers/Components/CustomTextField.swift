@@ -13,6 +13,9 @@ enum TextType {
     case url
     case text
 }
+protocol CustomTextFieldDelegate: class{
+    func customTextFieldDelegate(text: String)
+}
 class CustomTextField: UITextField {
     /*
      0. alphabetic
@@ -25,6 +28,7 @@ class CustomTextField: UITextField {
     var NUMERIC = "1234567890"
     var charsValidate = ""
     var textType = TextType.text
+    var customTextFieldDelegate: CustomTextFieldDelegate?
     @IBInspectable var textTypeIndex: Int = 3 {
         didSet{
             switchTextType()
@@ -84,6 +88,14 @@ class CustomTextField: UITextField {
 
 extension CustomTextField: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if string.isEmpty {
+            var str = (textField.text ?? "")                        // "Hello, World"           
+            
+            customTextFieldDelegate?.customTextFieldDelegate(text: String(str.dropLast()))
+        } else {
+            customTextFieldDelegate?.customTextFieldDelegate(text: (textField.text ?? "") + string)
+        }
+        
         return charsValidate.isEmpty ? true : charsValidate.contains(string)
     }
 }

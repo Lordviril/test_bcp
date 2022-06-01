@@ -30,7 +30,7 @@ class MoneyTableViewCell: UITableViewCell {
     func setData(contryWithMoney: ContryWithMoney) {
         guard let contry = contryWithMoney.contry else {return}
         if let money = contryWithMoney.money{
-            priceLabel.text = "Comprer USD = $\(money.buy_value) Vender USD = $\(money.sel_value)"
+            priceLabel.text = "Comprar USD = $\(money.buy_value) Vender USD = $\(money.sel_value)"
         }
         nameLabel.text = contry.name
         if let url = URL(string: contry.url_flag ?? "") {
